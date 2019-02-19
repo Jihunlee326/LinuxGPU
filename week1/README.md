@@ -18,9 +18,9 @@
   - sda1, sda2, sda3 : sda 에서 나뉜 파티셔 단위
   - 파티셔 나눈 다음에 설치하는 것 추천
   - ext4 : ubuntu 기본, ntfs : 윈도우 기본
-  - 우분투 설치해오기
+  - 우분투 설치해오기  
   
-[CLI]
+[CLI]  
   $ ls : 현재 디렉토리 정보  
     $ ls -al 또는 ll : 권한 탐색  
     $ ex) drwxr-xr-x 2 jihun.lee326  staff     64  2 19 20:39 ThisisDirectory  
