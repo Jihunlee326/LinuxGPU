@@ -21,28 +21,28 @@
   - 우분투 설치해오기
   
 [CLI]
-  $ ls : 현재 디렉토리 정보
-    $ ls -al 또는 ll : 권한 탐색
-    $ ex) drwxr-xr-x 2 jihun.lee326  staff     64  2 19 20:39 ThisisDirectory
-    $ (drwx)-(rwx)-(rwx) : d는 디렉토리 r은 리드 w는 라이트 x는 execute권한
-    $ 숫자 : 바라보고 있는 디렉토리 갯수
-    $ 첫번째 : 주인꺼, 두번째 : 소유주의 그룹, 세번째 : 나머지의 권한
-    $ jihun.lee326 : 소유주
-    $ staff : 소유그룹
-  $ ssh 아이디@IP : 해당 아이피로 접속
-  $ pwd : print workning directory, 현재 내 위치 출력
-  $ cd : change directory
-    $ cd만 치면 자신의 기본 위치로 돌아옴
-  $ . : 현재위치
-  $ .. : 이전위치
-  $ tree : 트리형태로 디렉토리를 보여줌
-    $ tree -L 3 : Level을 제한해서 tree 형태로 디렉토리르 볼 수 있음
-  * 모든명령어 --help : 해당 명령어의 사용법을 알 수 있음
-  $ find : 파일 탐색
-    $ find [대상위치] [옵션]
-    $ ex) find . -name 파일이름
-  $ clear : 화면 청소
-
+  $ ls : 현재 디렉토리 정보  
+    $ ls -al 또는 ll : 권한 탐색  
+    $ ex) drwxr-xr-x 2 jihun.lee326  staff     64  2 19 20:39 ThisisDirectory  
+    $ (drwx)-(rwx)-(rwx) : d는 디렉토리 r은 리드 w는 라이트 x는 execute권한  
+    $ 숫자 : 바라보고 있는 디렉토리 갯수  
+    $ 첫번째 : 주인꺼, 두번째 : 소유주의 그룹, 세번째 : 나머지의 권한  
+    $ jihun.lee326 : 소유주  
+    $ staff : 소유그룹  
+  $ ssh 아이디@IP : 해당 아이피로 접속  
+  $ pwd : print workning directory, 현재 내 위치 출력  
+  $ cd : change directory  
+    $ cd만 치면 자신의 기본 위치로 돌아옴  
+  $ . : 현재위치  
+  $ .. : 이전위치  
+  $ tree : 트리형태로 디렉토리를 보여줌  
+    $ tree -L 3 : Level을 제한해서 tree 형태로 디렉토리르 볼 수 있음  
+  * 모든명령어 --help : 해당 명령어의 사용법을 알 수 있음  
+  $ find : 파일 탐색  
+    $ find [대상위치] [옵션]  
+    $ ex) find . -name 파일이름  
+  $ clear : 화면 청소  
+  
 [Linux Directory]
   > / : 루트, 최상위 디렉토리, 리눅스의 모든 디렉토리들의 시작점
   > /bin : 기본적인 명령어가 저장된 디렉토리, 실행가능한 프로그램들(binary), 터미널로 사용할 수 있는 애들, 명령어들, 함부로 건들지 말 것.
