@@ -37,11 +37,70 @@
   $ .. : 이전위치  
   $ tree : 트리형태로 디렉토리를 보여줌  
     $ tree -L 3 : Level을 제한해서 tree 형태로 디렉토리르 볼 수 있음  
-  * 모든명령어 --help : 해당 명령어의 사용법을 알 수 있음  
+  $ 모든명령어 --help : 해당 명령어의 사용법을 알 수 있음  
   $ find : 파일 탐색  
     $ find [대상위치] [옵션]  
     $ ex) find . -name 파일이름  
   $ clear : 화면 청소  
+  $ mv [누구를] [어디로] : 파일 이동  
+  $ cp [누구를] [무엇으로] : 파일 복사  
+  $ mkdir [누구를] : 디렉토리 생성  
+  $ rm [누구를] : 파일 삭제  
+    $ rm -r : recursive 옵션임 안에 있는거 반복해서 다 지움  
+  $ touch [누구를] : 빈 파일 생성(시간 갱신), 원래 있던 파일의 시간을 업데이트 할 수 있음 => linux에서는 시간 정보가 매우 중요  
+  $ chown [누구:그룹] [대상] : 파일의 소유주/소유그룹 변경, change owner, (누구:그룹)한테 (대상 디렉토리)의 권한을 주는 것  
+  $ chmod [어떻게] [대상] : 파일의 권한 변경  
+    $ +, - 를 사용해서 권한 회수/부여  
+    $ chmod -x 대상파일 : 대상파일의 x 권한을 뺏음  
+    $ chmod u+r rock : rock파일의 u(user)권한에 x(execute)실행권한을 부여함  
+  $ echo [무엇을] : 아무 내용인 출력  
+    $ echo "HI!"  
+  $ alias [이름]='[커맨드]' : 별칭 커맨드 생성  
+    $ alias park='echo "I am a boy!"'  
+  $ cat [누구를] : 파일 내용 출력  
+  $ wget [주소] : web 주소에서 내용을 파일로 저장  
+  $ grep [찾을 내용] [누구를] : 파일 내용 탐색, 찾을 내용은 텍스트임  
+    $ grep -R GOLD rock1 : grep 에서는 대문자 R로 리커시브를 사용함  
+  $ ps : 현재 실행중인 프로세스들을 탐색  
+    $ ps -aux : 좀 더 자세하게 프로세스들을 보여줌  
+  $ top : 실시간 모니터링, 윈도우즈 작업 관리자랑 비슷  
+  $ kill [프로세스 id] : 프로세스 강제 종료  
+  $ pipe(!!!) CLS의 꽃! : 커맨드간으 상호 작용
+    $ | 커맨드를 사용해서 여러 명령어 입력  
+    $ ps -aux | grep top : ps -aux의 결과 중에서 top 이라는 텍스트만 탐색  
+  $ history : 사용한 명령어를 순서대로 출력  
+  $ wc -l [누구를] : 파일이 몇 줄인지 출력, word count  
+  
+[Shell]
+  - 커맨드를 실행시켜주고, 결과를 출력해주는 주체  
+  - Bash : Bourne shell, 리눅스으 기본 쉘  
+  - #!/bin/bash : xxx.sh 파일  
+  - command 들을 나열하며 한번에 수행 가능  
+  - .bashrc : login 할때마다, bash 셋팅  
+    - .bashrc에 설정해서 편하게 사용할 수 있음, 즉 여기에 설정하면 한번만 설정하면 됌  
+    - $PATH 도 설정할 수 있음, 환경변수 설정  
+  - su & sudo (super user) : 관리자의 권한을 빌리는 것  
+    - ubuntu는 root가 없음, 설치한 계정이 sudo 권한을 갖음  
+    - su : 계정 전환(root 포함)  
+    - sudo : root 계정 권한을 빌림  
+    
+[apt]
+  - advanced package tool  
+  - 패키지 매니저  
+  - Debian이 리눅스 배포판 중 최고로 손꼽히는 이유?  
+  - Fedora의 경우는 apt 대신 yum을 사용함  
+  - commands  
+    $ apt list : 패키지 리스트 출력  
+      $ apt list --installed : 설치된 패키지 리스트 출력  
+    $ apt search : 패키 찾기  
+      $ apt search python2.7 | grep install : 예제  
+    $ apt install  
+    $ apt remove : 패키지 제거  
+    $ apt update : apt 패키지 서버를 업데이트, 생각날때마다 해주기  
+      $ /etc/apt/soruce.list 에 목록이 있음  
+  
+   
+  
   
 [Linux Directory]
   > / : 루트, 최상위 디렉토리, 리눅스의 모든 디렉토리들의 시작점
