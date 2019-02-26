@@ -84,7 +84,16 @@ Week2. Linux 개발환경 세팅
       - 서버에 켜놓고 꺼지지 않는 터미널  
       - 로컬에서 터미널 세션에 언제나 붙을 수 있음  
     4) TMUX
-      -
+      - 손쉽게 터미널을 항상 서버에 켜놓을 수 있다.  
+      $ sudo apt install tmux  # tmux 설치  
+      $ tmux new -s [name]     # name 이라는 세션 생성  
+      $ jupyter-notebook       # jupyter 켜놓기  
+      $ wget <어떤 데이터셋.zip>  # 데이터셋 계속 받아놓기  
+      $ python train.py        # 내 실험 계속 켜놓기  
+      # <ctrl-b> d             # session에서 떠나기  
+      $ tmux attach -t [name]  # name 라는 세션에 다시 붙기  
+      # <ctrl - d > 연타        # 터미널 다 끄기하면, 세션 아예 삭제  
+    
                            
   
   
